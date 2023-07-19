@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+	<title>Hitung BMI</title>
+  <script src="Kalkulator BMI.js"></script>
+	<link rel="stylesheet" href="Kalkulator BMI.css">
+</head>
+<body>
+	<h1>Kalkulator BMI</h1>
+    <p></p>
+	<form onsubmit="return false;">
+    <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+    <input type="radio" name="jenis_kelamin"  value="pria"
+    id="jenis_kelamin" name="jenis_kelamin">pria
+    <input type="radio" name="jenis_kelamin" value="wanita"
+    id="jenis_kelamin" name="jenis_kelamin">Wanita
+        <br> <br>
+    
+
+    <label for="berat_badan">Berat Badan (kg):</label>
+    <input type="number" id="berat_badan" name="berat_badan" >
+
+    <label for="usia">Usia (tahun):</label>
+    <input type="number" id="usia" name="usia" required>
+
+    <label for="tinggi_badan">Tinggi Badan (cm):</label>
+    <input type="number" id="tinggi_badan" name="tinggi_badan" required>
+
+    <input type="submit" value="Hitung" onclick="hitungBMI()">
+    <input type="button" value="Clear" onclick="clearBMI()">
+  </form>
+
+  <p id="hasil"></p>
+
+</body>
+</html>
